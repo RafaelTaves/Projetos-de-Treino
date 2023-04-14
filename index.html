@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Siege FreeCodeCamp</title>
+    </head>
+    <body>
+        <div class="container">
+        <header>  
+        <h1 id="title" class="text-center" >Feedback da Comunidade do Siege</h1>
+        <p id="description" class="description text-center" >Obrigado por tomar parte do seu tempo para melhorar nosso jogo!</p>
+        </header>
+                <form id="survey-form">
+                    
+                        <div class="form-group">
+                        <label id="name-label" for="name" class="cor"> Nome </label> 
+                        <input 
+                        type="text" 
+                        id="name" 
+                        placeholder="Digite seu nome" 
+                        class="form-control" 
+                        required/>
+                        </div>
+                        <div class="form-group">
+                            <label id="email-label" for="email" class="cor"> Email </label>
+                            <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="Digite seu Email" 
+                            class="form-control" 
+                            required/>
+                        </div>
+                        <div class="form-group">
+                            <label id="number-label" for="number" class="cor">Idade </label> 
+                            <input 
+                            type="number" 
+                            id="number" 
+                            placeholder="Idade"
+                            min="10"
+                            max="150" 
+                            class="form-control"/>
+                        </div>    
+                        <div class="form-group">
+                            <p class="cor">Que opção reflete sua avaliação do jogo?</p>
+                            <select id="dropdown" name="select" class="form-control" required>
+                                <option disabled selected value>Selecione sua avaliação</option>
+                                <option value="otimo">Ótimo </option>
+                                <option value="bom">Mais ou Menos</option>
+                                <option value="ruim">Ruim</option>
+                            </select>    
+                        </div>
+
+                        <div class="form-group">
+                            <p class="cor">Você recomendaria Rainbow Six Siege para um amigo?</p>
+                            <label class="cor1"><input type="radio" name="radio" value="certeza" class="input-radio"> Sim</label>
+                            <label class="cor1"><input type="radio" name="radio" value="talvez" class="input-radio"> Talvez</label> 
+                            <label class="cor1"><input type="radio" name="radio" value="nao" class="input-radio"> Não</label>  
+                        </div>
+
+                        <div class="form-group">
+                            <p class="cor">Qual seria sua prioridade para que o jogo melhore?</p>
+                            <label class="cor1"><input type="checkbox" name="checkbox" value="anti-cheat" class="input-checkbox"> Anti-cheat</label>
+                            <label class="cor1"><input type="checkbox" name="checkbox" value="rankeamento" class="input-checkbox"> Sistema de Ranqueamento</label>
+                            <label class="cor1"><input type="checkbox" name="checkbox" value="mapas" class="input-checkbox"> Map pool</label>
+                            <label class="cor1"><input type="checkbox" name="checkbox" value="recoil" class="input-checkbox"> Recoil das armas</label>
+                        </div>
+
+                        <div class="form-group">
+                            <p class="cor">Algum comentário construtivo para a melhora do jogo?</p>
+                            <textarea name="textarea" id="text" placeholder="Digite aqui..." class="input-textarea"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Enviar" id="submit"
+                            class="submit-button" />
+                        </div>
+                        </div>
+                    </form>
+                
+            </div>
+        </section>
+    </body>
+</html>
